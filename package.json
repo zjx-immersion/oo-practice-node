@@ -5,6 +5,7 @@
   "main": "test.js",
   "scripts": {
     "test": "mocha test/**/*.js --compilers js:babel-core/register",
+    "test-single": "mocha --compilers js:babel-core/register",
     "test-cov": "./node_modules/.bin/babel-node node_modules/.bin/babel-istanbul cover node_modules/.bin/_mocha test/**/*.js --report html --check-coverage"
   },
   "repository": {
