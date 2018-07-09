@@ -1,0 +1,34 @@
+{
+  "name": "node-babel-mocha-stack",
+  "version": "1.0.0",
+  "description": "Babel Mocha demo",
+  "main": "test.js",
+  "scripts": {
+    "test": "mocha test/**/*.js --compilers js:babel-core/register",
+    "test-cov": "./node_modules/.bin/babel-node node_modules/.bin/babel-istanbul cover node_modules/.bin/_mocha test/**/*.js --report html --check-coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zjx-immersion/node-babel-mocha-stack.git"
+  },
+  "author": "Jason Zhong <jianxin_home@163.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zjx-immersion/node-babel-mocha-stack/issues"
+  },
+  "homepage": "https://github.com/zjx-immersion/node-babel-mocha-stack#readme",
+  "dependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-istanbul": "^0.12.2",
+    "babel-preset-es2015": "^6.18.0",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "sinon": "^6.0.0",
+    "sinon-chai": "^3.2.0",
+    "lodash": "^4.17.10"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2"
+  }
+}
